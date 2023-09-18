@@ -34,7 +34,7 @@ function SearchInput() {
         </div>
         <div>
             <input type="date"
-            className="p-2 outline-none bg-transparent text-gray-900"/>
+            className="p-2 outline-none bg-transparent text-gray-500"/>
         </div>
         </div>
       </div>

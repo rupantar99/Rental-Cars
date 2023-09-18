@@ -28,7 +28,8 @@ function CarsFiltersOption({carsList,setBrand,orderCarList}:any) {
             <select className="select select-bordered 
             w-full max-w-xs"
             onChange={(e)=>orderCarList(e.target.value)}>
-            <option disabled selected>Price</option>
+            <option hidden selected>Price</option>
+
             <option value={-1}>Min to Max</option>
             <option value={1}>Max to Min</option>
             </select>
@@ -36,7 +37,7 @@ function CarsFiltersOption({carsList,setBrand,orderCarList}:any) {
             select-bordered w-full md:block max-w-xs hidden"
             onChange={(e)=>setBrand(e.target.value)}>
 
-            <option disabled selected>Manufactural</option>
+            <option hidden selected>Manufacturer</option>
             
             {brandList&&brandList.map((brand:string,index:number)=>(
               <option key={index}>{brand}</option>
